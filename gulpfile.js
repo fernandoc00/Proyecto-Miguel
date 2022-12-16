@@ -6,11 +6,32 @@ var gulp = require('gulp');
 const git = require('gulp-git');
 const sass = require('gulp-sass')(require('sass'));
 var sassdoc = require('sassdoc');
-
-
-
 var gutil = require('gulp-util')
 var ftp = require('vinyl-ftp')
+
+
+function Descarga(cb){
+    git.clone('https://github.com/fernandoc00/Proyecto-Miguel.git', {args: './desarrollo/'}, function (err){
+    });
+    cb();
+}
+
+exports.Descarga = Descarga;
+
+function compilarSass() {
+    return gulp.src('./desarrollo/src/scss/scss/bootstrap.scss', { allowEmpty: true })
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./produccion/css/'))
+}
+exports.compilarSass = compilarSass;
+
+gulp.task('sassdoc', function () {
+    return gulp.src('desarrollo/src/scss/scss/**/*.scss')
+      .pipe(sassdoc());
+  });
+
+
+
 
 /** Configuration **/
 var user = 'u164705062.fernandocaravaca.com'
