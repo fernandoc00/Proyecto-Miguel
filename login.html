@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapphire App </title>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="src/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="src/img/favicon.ico">
+<!-- MDB -->
+<link
+  href="src/css/mdb.min.css"
+  rel="stylesheet"
+/>
+    <!-- Main Bootstrap Css  -->
+    <link href="src/css/main.css" rel="stylesheet">
+    <script defer src="node_modules/heatmap.js/build/heatmap.min.js"></script>
+    <script defer src="src/js/custom.js"></script>
+
+</head>
+<body>
+
+
+
+<div>
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar bg-success">
+  <!-- Toggle button -->
+  <button
+  class="navbar-toggler"
+  type="button"
+  data-mdb-toggle="collapse"
+  data-mdb-target="#navbarButtonsExample"
+  aria-controls="navbarButtonsExample"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <i class="fas fa-bars"></i>
+</button>
+  <div class="container-fluid justify-content-center">
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarButtonsExample">
+    <!-- Left elements -->
+    <div class="d-flex">
+      <ul class="navbar-nav mr-auto smooth-scroll ">
+        <li class="nav-item">
+          <a class="nav-link title fs-4 " href="index.html">Inicio
+
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link title fs-4" href="sobre-nosotros.html">Sobre Nosotros
+
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Left elements -->
+
+    <!-- Center elements -->
+    <ul class="navbar-nav flex-row d-none d-md-flex">
+      <li class="nav-item me-3 me-lg-1 active">
+        <a class="nav-link " href="index.html">
+          <img class="logotipo" src="src/img/logo.png" alt="Logotipo Header" width="70px">
+        </a>
+      </li>
+
+    </ul>
+    <!-- Center elements -->
+
+    <!-- Right elements -->
+    <ul class="navbar-nav flex-row">
+      <ul class="navbar-nav mr-auto smooth-scroll">
+        <li class="nav-item ">
+          <a class="nav-link title fs-4" href="servicios.html">Servicios
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link title fs-4" href="contacto.html">Contacto
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+
+      </ul>
+    </ul>
+    <ul class="navbar-nav flex-row justify-content-end">
+      <li class="justify-content-center">
+        <a
+          class="btn px-2"
+          href="login.html"
+          role="button"
+        >
+        <span>Entrar&nbsp;</span> <i class="fa-solid fa-user"></i></a>
+      </li>
+    </ul>
+    <!-- Right elements -->
+  </div>
+
+  </div>
+</nav>
+
+
+<div class="d-flex p-2 bg-primary bg-image" style="background-image: url('http://fernandocaravaca.com/wp-content/uploads/2022/12/breadcrumbs.png'); height: 40vh;">
+  <div class="container-fluid">
+  <div class="" style="margin-top: 80px;">
+    <div class="p-5  mb-4 bg-image">
+      <h1 class="text-white">Login</h1>
+      <!-- Breadcrumb -->
+      <nav class="d-flex ">
+        <h6 class="mb-0">
+          <a href="index.html" class="text-white">Inicio</a>
+          <span class="text-white">/</span>
+          <a href="login.html" class="text-white">Login</a>
+        </h6>
+      </nav>
+      <!-- Breadcrumb -->
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+        <div class="container login-top">
+          <div class="row">
+            <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-5">
+
+              <!-- Form with header -->
+              <div class="card wow fadeIn" data-wow-delay="0.3s">
+                <div class="card-body">
+
+                  <!-- Header -->
+                  <div class="form-header purple-gradient">
+                    <h3 class="font-weight-500 my-2 py-1 text-primary mt-3 text-center"><i class="fas fa-user"></i> Inicio de sesión</h3>
+                  </div>
+
+                  <!-- Body -->
+
+                  <div class="md-form text-center">
+                    
+                    <i class="fas fa-envelope prefix text-primary mt-3"></i>
+                    <label for="orangeForm-email">Tu correo electrónico</label>
+                    <input type="text" id="orangeForm-email" class="form-control border-primary">
+                    
+                  </div>
+
+                  <div class="md-form text-center">
+                    <i class="fas fa-lock prefix text-primary mt-3"></i>
+                    <label for="orangeForm-pass">Tu contraseña</label>
+                    <input type="password" id="orangeForm-pass" class="form-control border-primary">
+                    <a href="#" class="d-flex justify-content-end mt-1" >¿Has olvidado la contraseña?</a>
+                  </div>
+
+                  <div class="text-center">
+                    <button class="btn bg-primary text-white purple-gradient btn-lg mt-3 mb-2">Entrar <i class="fas fa-chevron-right"></i></button>
+                    <p class="mt-2">¿No tienes cuenta todavía? <a href="#">Crear cuenta</a></p>
+                    <hr class="mt-4">
+                    <div class="inline-ul text-center d-flex justify-content-center">
+                      <a class="p-2 m-2 fa-lg tw-ic"><i class="fab fa-twitter white-text"></i></a>
+                      <a class="p-2 m-2 fa-lg li-ic"><i class="fab fa-linkedin-in white-text"> </i></a>
+                      <a class="p-2 m-2 fa-lg ins-ic"><i class="fab fa-instagram white-text"> </i></a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Form with header -->
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start text-muted bg-success">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block text-primary fw-semibold">
+      <span>Sigue conectado en nuestras redes sociales:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="color:#444F5A;">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>Sapphire App
+          </h6>
+          <p>
+            ¡Atención, solteros y solteras del mundo entero! Si queréis encontrar el amor, buscáis nuevos amigos o os lo queréis tomar con calma, Sapphire es vuestra app de citas. 
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="color:#444F5A;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Enlaces de Interés
+          </h6>
+          <p>
+            <a href="sobre-nosotros.html" class="text-reset">Sobre Nosotros</a>
+          </p>
+          <p>
+            <a href="usuarios.html" class="text-reset">Usuarios</a>
+          </p>
+          <p>
+            <a href="servicios.html" class="text-reset">Servicios</a>
+          </p>
+          <p>
+            <a href="faq.html" class="text-reset">FAQ</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="color:#444F5A;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+          Contacto
+          </h6>
+          <p>
+            <a href="contacto.html" class="text-reset">Contacta con nosotros</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Política de privacidad</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Política de cookies</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Condiciones de uso</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="color:#444F5A;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Suscríbete a nuestra newsletter</h6>
+          <form>
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+
+            <!-- Email input -->
+            <div class="form-notch-middle mb-4 border-success">
+              <label>Email:</label>
+              <input type="email" id="form3Example3" class="form-control text-small" placeholder="Ejemplo: info@fernandocaravaca.com" />
+            </div>
+          
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+              <label class="form-check-label" for="form2Example33">
+                Acepto los <a href="#">términos y condiciones</a>
+              
+              </label>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Suscribirse</button>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 text-white" style="background-color: #ED147D;">
+    © 2022 Sapphire Group, LLC, todos los derechos reservados. Diseñado y desarrollado por 
+    <a class="text-reset fw-bold " href="https://fernandocaravaca.com">Fernando Caravaca</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  <!-- MDB -->
+<script
+  type="text/javascript"
+  src="src/js/mdb.min.js"
+></script>
+</body>
+</html>

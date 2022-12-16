@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapphire App </title>
+
+
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="src/img/favicon.ico">
+<!-- MDB -->
+<link
+  href="src/css/mdb.min.css"
+  rel="stylesheet"
+/>
+    <!-- Main Bootstrap Css  -->
+    <link href="src/css/main.css" rel="stylesheet">
+
+
+    <script defer src="node_modules/heatmap.js/build/heatmap.min.js"></script>
+    <script defer src="src/js/custom.js"></script>
+</head>
+<body>
+
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar bg-success">
+  <!-- Toggle button -->
+  <button
+  class="navbar-toggler"
+  type="button"
+  data-mdb-toggle="collapse"
+  data-mdb-target="#navbarButtonsExample"
+  aria-controls="navbarButtonsExample"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <i class="fas fa-bars"></i>
+</button>
+  <div class="container-fluid justify-content-center">
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarButtonsExample">
+    <!-- Left elements -->
+    <div class="d-flex">
+      <ul class="navbar-nav mr-auto smooth-scroll ">
+        <li class="nav-item">
+          <a class="nav-link title fs-4 " href="index.html">Inicio
+
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link title fs-4" href="sobre-nosotros.html">Sobre Nosotros
+
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Left elements -->
+
+    <!-- Center elements -->
+    <ul class="navbar-nav flex-row d-none d-md-flex">
+      <li class="nav-item me-3 me-lg-1 active">
+        <a class="nav-link " href="index.html">
+          <img class="logotipo" src="src/img/logo.png" alt="Logotipo Header" width="70px">
+        </a>
+      </li>
+
+    </ul>
+    <!-- Center elements -->
+
+    <!-- Right elements -->
+    <ul class="navbar-nav flex-row">
+      <ul class="navbar-nav mr-auto smooth-scroll">
+        <li class="nav-item ">
+          <a class="nav-link title fs-4" href="servicios.html">Servicios
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link title fs-4" href="contacto.html">Contacto
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+
+      </ul>
+    </ul>
+    <ul class="navbar-nav flex-row justify-content-end">
+      <li class="justify-content-center">
+        <a
+          class="btn px-2"
+          href="login.html"
+          role="button"
+        >
+        <span>Entrar&nbsp;</span> <i class="fa-solid fa-user"></i></a>
+      </li>
+    </ul>
+    <!-- Right elements -->
+  </div>
+
+  </div>
+</nav>
+
+
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselExampleIndicators"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselExampleIndicators"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselExampleIndicators"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button> 
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="src/img/carousel1.png" class="d-block w-100" alt="Wild Landscape"/>
+      <div
+      class="h-100 d-flex justify-content-center align-items-center mask rgba-indigo-strong text-white text-center">
+      <ul class="list-unstyled animated fadeInUp col-md-12 textos-carousel">
+        <li>
+          <h1 class="display-4 fw-bold fs-1" style="text-shadow: 2px 2px #ED147D;">¡Conoce a personas afines a ti en nuestra plataforma!</h1>
+        </li>
+        <li>
+          <h3 class="my-4 fw-bold" style="text-shadow: 2px 2px #ED147D;">Sapphire APP</h3>
+        </li>
+        <li>
+          <a target="_blank" href="login.html"
+            class="btn pink-gradient btn-rounded btn-lg text-success boton-carousel " rel="nofollow">Empezar YA</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img src="src/img/carousel2.png" class="d-block w-100" alt="Camera"/>
+      <div
+      class="h-100 d-flex justify-content-center align-items-center mask rgba-indigo-strong text-white text-center">
+      <ul class="list-unstyled animated fadeInUp col-md-12 textos-carousel">
+        <li>
+          <h1 class="display-4 fw-bold" style="width:600px; text-shadow: 2px 2px #ED147D;">Encuentra a tu media naranja en nuestra página de citas.</h1>
+        </li>
+        <li>
+          <br>
+        </li>
+        <li >
+          <a target="_blank" href="login.html"
+            class="btn pink-gradient btn-rounded btn-lg text-success"  rel="nofollow">Empezar YA</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img src="src/img/carousel3.png" class="d-block w-100" alt="Exotic Fruits"/>
+      <div
+      class="h-100 d-flex justify-content-center align-items-center mask rgba-indigo-strong text-white text-center">
+      <ul class="list-unstyled animated fadeInUp col-md-12 textos-carousel">
+        <li>
+          <h1 class="display-4 fw-bold" style="text-shadow: 2px 2px #ED147D;">¡Haz nuevos amigos y encuentra el amor en nuestro sitio!</h1>
+        </li>
+        <li>
+          <h3 class="my-4 fw-bold" style="text-shadow: 2px 2px #ED147D;">Sapphire APP</h3>
+        </li>
+        <li>
+          <a target="_blank" href="login.html"
+            class="btn pink-gradient btn-rounded btn-lg text-success" rel="nofollow">Empezar YA</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+<div class="container">
+<!-- Section: About -->
+<section id="about" class="about mt-5 mb-5 py-3 wow fadeIn" data-wow-delay="0.2s">
+
+  <!-- Grid row -->
+  <div class="row pt-2 mt-5">
+
+    <!-- Grid column -->
+    <div class="col-lg-5 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
+      <!-- Image -->
+      <img src="src/img/pareja-2.png" class="img-fluid z-depth-1 rounded"
+        alt="My photo">
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-6 ml-auto col-md-12 wow fadeIn" data-wow-delay="0.4s">
+
+      <!-- Secion heading -->
+      <h3 class="mb-5 dark-text-secondary title font-weight-bold wow fadeIn  fw-bold" data-wow-delay="0.2s">
+        BIENVENIDO A SAPPHIRE<br>
+        <strong>La app con corazón.</strong>
+      </h3>
+
+      <!-- Description -->
+      <p align="justify" class="grey-text">Sapphire APP es una aplicación de citas diseñada para ayudar a los usuarios a encontrar a su pareja ideal y el amor. Con un sistema de matchmaking avanzado y una interfaz de usuario intuitiva, Sapphire APP hace que sea fácil para los usuarios encontrar personas que comparten sus intereses y preferencias. Además, la app cuenta con un sistema de mensajería privada seguro y una función de bloqueo y denuncia para proteger a los usuarios de comportamientos inapropiados.</p>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: About -->
+
+</div>
+
+
+
+
+<div class="container">
+  <!-- Section: About -->
+  <section id="about" class="about mt-5 mb-5 py-3 wow fadeIn" data-wow-delay="0.2s">
+  
+    <!-- Grid row -->
+    <div class="row pt-2 mt-5">
+  
+
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-6 ml-auto col-md-12 wow fadeIn" data-wow-delay="0.4s">
+  
+        <!-- Secion heading -->
+
+        <!-- Description -->
+        <p align="justify" class="grey-text">Para garantizar la autenticidad de los perfiles, Sapphire APP cuenta con un sistema de verificación de perfiles que asegura que todos los usuarios son reales y genuinos. Además, la app ofrece un algoritmo de búsqueda avanzado que permite a los usuarios encontrar personas que cumplan con sus criterios de búsqueda y preferencias.</p>
+  
+      </div>
+      <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-lg-5 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
+          <!-- Image -->
+          <img src="src/img/pareja-3.png" class="img-fluid z-depth-1 rounded"
+            alt="My photo">
+        </div>
+    </div>
+    <!-- Grid row -->
+  
+  </section>
+  <!-- Section: About -->
+  </div>
+
+
+<div class="container">
+      <!-- Section: Features v.4 -->
+      <section id="features" class="mb-5 pb-4">
+
+        <!-- Section heading -->
+        <h3 class="text-center title my-5 dark-grey-text font-weight-bold wow fadeIn text-primary" data-wow-delay="0.2s">
+          <strong>¿Por qué Sapphire?</strong>
+        </h3>
+
+        <!-- Section sescription -->
+        <h5 class="text-center w-responsive mx-auto my-5 grey-text wow fadeIn" style="margin-top: -20px !important; padding-bottom: 50px !important;" data-wow-delay="0.2s">
+          Encuentra una persona con la que coincidas</h5>
+
+        <!-- Grid row -->
+        <div class="row features-small wow fadeIn" data-wow-delay="0.4s">
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-12">
+            <!-- Grid row -->
+            <div class="row mb-3">
+              <div class="col-2">
+                <i class="fas fa-edit orange-text fa-2x"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="font-weight-bold title">Matchmaking</h5>
+                <p class="grey-text">Sistema de matchmaking en función a intereses
+                </p>
+              </div>
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row mb-3">
+              <div class="col-2">
+                <i class="fas fa-cogs orange-text fa-2x"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="font-weight-bold title">Algoritmos modernos</h5>
+                <p class="grey-text">Algoritmo de búsqueda avanzado</p>
+              </div>
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-tablet-alt orange-text fa-2x"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="font-weight-bold title">Privacidad</h5>
+                <p class="grey-text">Sistema de mensajería privada</p>
+              </div>
+            </div>
+            <!-- Grid row -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-12 mb-1 text-center text-md-left" style="margin-right: 0px;">
+            <img src="src/img/tres-moviles.png" alt="Tres móviles"
+              class="z-depth-0 img-fluid">
+          </div>
+          <!-- Grid column -->
+
+          <!-- Third column -->
+          <div class="col-lg-4 col-md-12">
+            <!-- Grid row -->
+            <div class="row mb-3">
+              <div class="col-2">
+                <i class="fas fa-chart-line orange-text fa-2x"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="font-weight-bold title">Protegido</h5>
+                <p class="grey-text">Función de bloqueo y denuncia</p>
+              </div>
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row mb-3">
+              <div class="col-2">
+                <i class="fas fa-users orange-text fa-2x"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="font-weight-bold title">Verificación de usuarios</h5>
+                <p class="grey-text">Sistema de verificación de perfiles </p>
+              </div>
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row">
+              <div class="col-2">
+                <i class="far fa-gem orange-text fa-2x"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="font-weight-bold title">Interfaz simple</h5>
+                <p class="grey-text">Interfaz de usuario intuitiva y fácil de usar
+                </p>
+              </div>
+            </div>
+            <!-- Grid row -->
+            
+          </div>
+          <!-- Third column -->
+
+        </div>
+         <!-- Section sescription -->
+         <p class="text-center grey-text my-5 w-responsive mx-auto wow fadeIn" data-wow-delay="0.2s">Una app de citas para ligar y encontrar pareja debe tener varias características para ser eficiente y efectiva. </p>
+
+        <!-- Grid row -->
+
+      </section>
+      <!-- Section: Features v.4 -->
+</div>
+
+<div class="container">
+  <!-- Section: About -->
+  <section id="about" class="about mt-5 mb-5 py-3 wow fadeIn" data-wow-delay="0.2s">
+  
+    <!-- Grid row -->
+    <div class="row pt-2 mt-5">
+  
+
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-6 ml-auto col-md-12 wow fadeIn" data-wow-delay="0.4s">
+  
+        <!-- Secion heading -->
+        <h3 class="mb-5 dark-grey-text title fw-bold wow fadeIn text-primary" data-wow-delay="0.2s">
+          <strong>Profundice en las 
+            citas con desconocidos</strong>
+        </h3>
+  
+        <!-- Description -->
+        <p align="justify" class="grey-text">Con Sapphire APP, los usuarios pueden buscar pareja en su área local o en cualquier parte del mundo, dependiendo de sus preferencias. Además, la app también ofrece una serie de recursos y consejos útiles para ayudar a los usuarios a tener éxito en su búsqueda de pareja y amor.</p>
+  
+      </div>
+      <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-lg-5 col-md-12 mb-3 wow fadeIn ms-5" style="margin-left: 20px !important;" data-wow-delay="0.4s">
+          <!-- Image -->
+          <img src="src/img/pareja.png" style="width: 200px;" class="img-fluid z-depth-1 rounded"
+            alt="Pareja">
+        </div>
+    </div>
+    <!-- Grid row -->
+  
+  </section>
+  <!-- Section: About -->
+  </div>
+
+  <div class="container">
+    <!-- Section: About -->
+    <section id="about" class="about mt-5 mb-5 py-3 wow fadeIn" data-wow-delay="0.2s">
+    
+      <!-- Grid row -->
+      <div class="row pt-2 mt-5">
+    
+  
+        <!-- Grid column -->
+    
+        <!-- Grid column -->
+        <div class="col-lg-6 ml-auto col-md-12 wow fadeIn" data-wow-delay="0.4s">
+    
+          <!-- Secion heading -->
+          <h3 class="mb-5 dark-grey-text title fw-bold wow fadeIn text-primary" data-wow-delay="0.2s">
+            <strong>Viva la experiencia de una cita por 
+              Videollamada y conozca a esa 
+              persona especial</strong>
+          </h3>
+    
+          <!-- Description -->
+          <p align="justify" class="grey-text">En resumen, Sapphire APP es una aplicación de citas completa y eficiente que ofrece a los usuarios todas las herramientas necesarias para encontrar a su pareja ideal y el amor. ¡Descarga Sapphire APP hoy mismo y empieza a buscar pareja en cuestión de minutos!</p>
+    
+        </div>
+        <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-lg-5 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
+            <!-- Image -->
+            <img src="src/img/phone-default.png" class="img-fluid z-depth-1 rounded"
+              alt="Teléfono por defecto">
+          </div>
+      </div>
+      <!-- Grid row -->
+    
+    </section>
+    <!-- Section: About -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <div data-draggable="true" class="" style="position: relative;"><!---->
+      <div class="mdb-placeholder" data-v-271253ee=""></div>
+      <section draggable="false" class="container pt-5" data-v-271253ee="">
+        <section class="mb-10 text-center">
+          <h2 class="fw-bold mb-5"><span>Recomendado por los  </span> <u class="text-primary">solteros</u></h2>
+          <div class="row gx-lg-5">
+            <div class="col-xl-2 col-md-4 mb-5"> <a href="perfil.html"><img src="src/img/2.jpg"
+                class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 2" style="max-width: 100px" aria-controls="#picker-editor">
+              <p class="fw-bold mb-1">John Doe</p></a>
+              <p class="text-muted mb-0">22 años</p>
+            </div>
+            <div class="col-xl-2 col-md-4 mb-5"> <a href="perfil.html"><img src="src/img/5.jpg"
+                class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 5" style="max-width: 100px" aria-controls="#picker-editor">
+              <p class="fw-bold mb-1">Lisa Ferrol</p></a>
+              <p class="text-muted mb-0">23 años</p>
+            </div>
+            <div class="col-xl-2 col-md-4 mb-5"> <a href="perfil.html"><img src="src/img/6.jpg"
+                class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 6" style="max-width: 100px" aria-controls="#picker-editor">
+              <p class="fw-bold mb-1">Maria Smith</p></a>
+              <p class="text-muted mb-0">25 años</p>
+            </div>
+            <div class="col-xl-2 col-md-4 mb-5"> <a href="perfil.html"><img src="src/img/7.jpg"
+                class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 7" style="max-width: 100px" aria-controls="#picker-editor">
+              <p class="fw-bold mb-1">Agatha Bevos</p></a>
+              <p class="text-muted mb-0">23 años</p>
+            </div>
+            <div class="col-xl-2 col-md-4 mb-5"> <a href="perfil.html"><img src="src/img/8.jpg"
+              class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 8" style="max-width: 100px" aria-controls="#picker-editor">
+            <p class="fw-bold mb-1">Agatha Bevos</p></a>
+            <p class="text-muted mb-0">18 años</p>
+          </div>
+          <div class="col-xl-2 col-md-4 mb-5"> <a href="perfil.html"><img src="src/img/9.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 9" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Agatha Bevos</p></a>
+          <p class="text-muted mb-0">21 años</p>
+        </div>
+          </div>
+          <a href="usuarios.html">
+          <button type="submit" class="btn btn-primary bg-primary text-white" >Cargar más <i class="fa-solid fa-plus"></i></button>
+          </a>
+        </section>
+      </section>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start text-muted bg-success">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block text-primary fw-semibold">
+      <span>Sigue conectado en nuestras redes sociales:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="color:#444F5A;">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>Sapphire App
+          </h6>
+          <p>
+            ¡Atención, solteros y solteras del mundo entero! Si queréis encontrar el amor, buscáis nuevos amigos o os lo queréis tomar con calma, Sapphire es vuestra app de citas. 
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="color:#444F5A;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Enlaces de Interés
+          </h6>
+          <p>
+            <a href="sobre-nosotros.html" class="text-reset">Sobre Nosotros</a>
+          </p>
+          <p>
+            <a href="usuarios.html" class="text-reset">Usuarios</a>
+          </p>
+          <p>
+            <a href="servicios.html" class="text-reset">Servicios</a>
+          </p>
+          <p>
+            <a href="faq.html" class="text-reset">FAQ</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="color:#444F5A;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+          Contacto
+          </h6>
+          <p>
+            <a href="contacto.html" class="text-reset">Contacta con nosotros</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Política de privacidad</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Política de cookies</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Condiciones de uso</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="color:#444F5A;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Suscríbete a nuestra newsletter</h6>
+          <form>
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+
+            <!-- Email input -->
+            <div class="form-notch-middle mb-4 border-success">
+              <label>Email:</label>
+              <input type="email" id="form3Example3" class="form-control text-small" placeholder="Ejemplo: info@fernandocaravaca.com" />
+            </div>
+          
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+              <label class="form-check-label" for="form2Example33">
+                Acepto los <a href="#">términos y condiciones</a>
+              
+              </label>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Suscribirse</button>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 text-white" style="background-color: #ED147D;">
+    © 2022 Sapphire Group, LLC, todos los derechos reservados. Diseñado y desarrollado por 
+    <a class="text-reset fw-bold " href="https://fernandocaravaca.com">Fernando Caravaca</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+<!-- Footer -->
+  <!--SCRIPTS-->
+<!-- JavaScript Bundle with Popper -->
+<script src="src/js/bootstrap.bundle.min.js"></script>
+  <!--JQuery-->
+  <script type="text/javascript" src="src/js/jquery-3.4.1.min.js"></script>
+
+  <!--Bootstrap tooltips-->
+  <script type="text/javascript" src="src/js/popper.min.js"></script>
+
+  <!--Bootstrap core JavaScript-->
+  <script type="text/javascript" src="src/js/bootstrap.min.js"></script>
+
+  <!--MDB core JavaScript-->
+  <script type="text/javascript" src="src/js/mdb.min.js"></script>
+
+  <script>
+
+    // create configuration object
+var config = {
+  container: document.getElementById('heatmapContainer'),
+  target: 'heatmapcanvas', // ID del elemento canvas
+  radius: 10,
+  maxOpacity: .5,
+  minOpacity: 0,
+  blur: .75,
+  gradient: {
+    // enter n keys between 0 and 1 here
+    // for gradient color customization
+    '.5': 'blue',
+    '.8': 'red',
+    '.95': 'white'
+  }
+};
+var heatmapInstance = h337.create(config);
+
+
+// a single datapoint
+var dataPoint = {
+  x: 5, // x coordinate of the datapoint, a number
+  y: 5, // y coordinate of the datapoint, a number
+  value: 100 // the value at datapoint(x, y)
+};
+heatmapInstance.addData(dataPoint);
+
+// multiple datapoints (for data initialization use setData!!)
+var dataPoints = [dataPoint, dataPoint, dataPoint, dataPoint];
+heatmapInstance.addData(dataPoints);
+
+heatmapInstance.getDataURL();
+
+heatmapcanvas.render();
+  </script>
+
+
+</body>
+</html>

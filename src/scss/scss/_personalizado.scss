@@ -1,0 +1,130 @@
+/// @author Fernando Caravaca
+///
+/// Es el partial encargado de aplicar los estilos a elementos
+/// concretos que he necesitado corregir ya que bootstrap me limitaba un
+/// poco en algunas cosas. Igualmente, también podemos encontrar algunos media querys
+/// utilizados para mejorar la vista responsive de mi página web.
+/// @access public
+/// @name _personalizado.scss
+
+///{
+
+
+
+
+
+/// En este media query simplemente corregimos los márgenes
+/// de la vista móvil para dispositivos superiores a 768px
+/// @name MediaQuery para PC
+/*Media Query*/
+
+
+@include media-breakpoint-up(md) {
+    .nav-item {
+        margin-left: 1.5rem !important;
+    }
+
+    .nav-item {
+        margin-right: 1.5rem !important;
+    }
+
+ }
+
+
+
+
+
+/// En este media query de móvil me encargo de eliminar
+/// el logotipo, además de los botones y textos del carousel
+/// para facilitar la visión del menú y los slider del carousel en
+/// dispositivos móviles menos de 768px.
+///
+/// También corrijo margenes y tamaño de algunos elementos como
+/// la clase demonio o sapphi.
+/// @name MediaQuery para Móviles
+/*Media Query*/
+ @include media-breakpoint-down(md) {
+    .logotipo{
+        display: none !important;
+    }
+    .boton-carousel{
+        display: none !important;
+    }
+    .textos-carousel{
+        display: none !important;
+    }
+    .demonio{
+      margin-left: 0px !important;
+    }
+    .sapphi{
+      width: 150px !important;
+      display: flex !important;
+      justify-content: center !important;
+    }
+  }
+
+/// Aplico estilos concretos a la tarjeta de la vista de FAQ ya que
+/// Bootstrap me limita un poco los tamaños.
+/// @name Card FAQ
+/*Card FAQ*/
+      .card-faq{
+        border-radius: 40px !important;
+        width: 30rem !important;
+        height: 12rem !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+/// Aplico estilos concretos a la tarjeta de la vista de FAQ ya que
+/// Bootstrap me limita un poco los tamaños.
+/// @name Login TOP
+/*Login TOP*/
+      .login-top{
+        margin-top: 5rem !important;
+        margin-bottom: 5rem !important;
+      }
+
+
+
+/// Aplico un width menor
+/// a la barra de scroll del navegador.
+/// @name Ancho Scrollbar
+
+  /* ScrollBar Width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+/// Aplico un color claro para
+/// la barra fija de scroll del navegador.
+/// @name BarraFija Scrollbar
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+/// Aplico el color de la variable $success para
+/// la barra de scroll no fija del navegador.
+/// @name BarraMovimiento Scrollbar
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $success;
+  }
+
+/// Aplico el color de la variable $primary para
+/// la barra de scroll no fija del navegador
+/// para los casos en los que el elemento esté
+/// hover o active.
+/// @name BarraMovimiento:hover Scrollbar
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primary;
+  }
+
+
+

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapphire App </title>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="src/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="src/img/favicon.ico">
+<!-- MDB -->
+<link
+  href="src/css/mdb.min.css"
+  rel="stylesheet"
+/>
+    <!-- Main Bootstrap Css  -->
+    <link href="src/css/main.css" rel="stylesheet">
+    <script defer src="node_modules/heatmap.js/build/heatmap.min.js"></script>
+    <script defer src="src/js/custom.js"></script>
+
+</head>
+<body>
+
+
+
+<div>
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar bg-success">
+  <!-- Toggle button -->
+  <button
+  class="navbar-toggler"
+  type="button"
+  data-mdb-toggle="collapse"
+  data-mdb-target="#navbarButtonsExample"
+  aria-controls="navbarButtonsExample"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <i class="fas fa-bars"></i>
+</button>
+  <div class="container-fluid justify-content-center">
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarButtonsExample">
+    <!-- Left elements -->
+    <div class="d-flex">
+      <ul class="navbar-nav mr-auto smooth-scroll ">
+        <li class="nav-item">
+          <a class="nav-link title fs-4 " href="index.html">Inicio
+
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link title fs-4" href="sobre-nosotros.html">Sobre Nosotros
+
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Left elements -->
+
+    <!-- Center elements -->
+    <ul class="navbar-nav flex-row d-none d-md-flex">
+      <li class="nav-item me-3 me-lg-1 active">
+        <a class="nav-link " href="index.html">
+          <img class="logotipo" src="src/img/logo.png" alt="Logotipo Header" width="70px">
+        </a>
+      </li>
+
+    </ul>
+    <!-- Center elements -->
+
+    <!-- Right elements -->
+    <ul class="navbar-nav flex-row">
+      <ul class="navbar-nav mr-auto smooth-scroll">
+        <li class="nav-item ">
+          <a class="nav-link title fs-4" href="servicios.html">Servicios
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link title fs-4" href="contacto.html">Contacto
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+
+      </ul>
+    </ul>
+    <ul class="navbar-nav flex-row justify-content-end">
+      <li class="justify-content-center">
+        <a
+          class="btn px-2"
+          href="login.html"
+          role="button"
+        >
+        <span>Entrar&nbsp;</span> <i class="fa-solid fa-user"></i></a>
+      </li>
+    </ul>
+    <!-- Right elements -->
+  </div>
+
+  </div>
+</nav>
+
+
+
+ 
+<div class="d-flex p-2 bg-primary bg-image" style="background-image: url('http://fernandocaravaca.com/wp-content/uploads/2022/12/breadcrumbs.png'); height: 40vh;">
+  <div class="container-fluid">
+  <div class="" style="margin-top: 80px;">
+    <div class="p-5  mb-4 bg-image">
+      <h1 class="text-white">Usuarios</h1>
+      <!-- Breadcrumb -->
+      <nav class="d-flex ">
+        <h6 class="mb-0">
+          <a href="index.html" class="text-white">Inicio</a>
+          <span class="text-white">/</span>
+          <a href="usuarios.html" class="text-white">Usuarios</a>
+        </h6>
+      </nav>
+      <!-- Breadcrumb -->
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+  
+
+
+
+
+
+
+
+<div data-draggable="true" class="" style="position: relative;"><!---->
+  <div class="mdb-placeholder" data-v-271253ee=""></div>
+  <section draggable="false" class="container pt-5" data-v-271253ee="">
+    <section class="mb-10 text-center">
+      <h2 class="fw-bold mb-5"><span>Con el plan premium, </span> <u class="text-primary">saldrás siempre arriba</u></h2>
+      <div class="row gx-lg-5">
+        <div class="col-xl-2 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/2.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 2" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">John Doe</p>
+      </a>    <p class="text-muted mb-0">22 años</p>
+        </div>
+        <div class="col-xl-2 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/5.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 5" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Lisa Ferrol</p>
+   </a>       <p class="text-muted mb-0">23 años</p>
+        </div>
+        <div class="col-xl-2 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/6.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 6" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Maria Smith</p>
+   </a>       <p class="text-muted mb-0">25 años</p>
+        </div>
+        <div class="col-xl-2 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/7.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 7" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Agatha Bevos</p>
+  </a>        <p class="text-muted mb-0">23 años</p>
+        </div>
+        <div class="col-xl-2 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/8.jpg"
+          class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 8" style="max-width: 100px" aria-controls="#picker-editor">
+        <p class="fw-bold mb-1">Agatha Bevos</p>
+  </a>      <p class="text-muted mb-0">18 años</p>
+      </div>
+      <div class="col-xl-2 col-md-4 mb-5"><a href="perfil.html"><img src="src/img/9.jpg"
+        class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 9" style="max-width: 100px" aria-controls="#picker-editor">
+      <p class="fw-bold mb-1">Agatha Bevos</p>
+  </a>    <p class="text-muted mb-0">21 años</p>
+    </div>
+      </div>
+    </section>
+  </section>
+</div>
+
+
+
+<div id="preview" class="preview">
+  <div>
+    <div data-draggable="true" class="" style="position: relative;"><!----><!---->
+      <section draggable="false" class="container pt-5" data-v-271253ee="">
+        <section class="mb-10 text-center text-md-start"> <!-- Background image -->   
+          <div class="card mx-4 mx-md-5 shadow-5-strong"
+            style=" margin-top: 0px; background: hsla(0, 0%, 100%, 0.7); backdrop-filter: blur(30px); ">
+            <div class="card-body py-5 px-md-5">
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-10">
+                  <div class="row gx-lg-4 align-items-center">
+                    <div class="col-lg-12 mb-4 mb-lg-0">
+                      <form class="row row-cols-lg-auto g-3 align-items-center">
+
+                        
+                        <div class="col-12">
+                          <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                          <select class="select rounded-5 border-primary">
+                            <option value="1">Hombre</option>
+                            <option value="2">Mujer</option>
+                            <option value="3">Otro</option>
+                          </select>
+                        </div>
+                        <div>Estoy buscando:</div>
+                        <div class="col-12 rounded-5">
+                          <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                          <select class="select rounded-5 border-primary ">
+                            <option value="1">Hombre</option>
+                            <option value="2">Mujer</option>
+                            <option value="3">Otro</option>
+                          </select>
+                        </div>
+                        <div>Rango de edad:</div>
+                        <div class="col-12">
+                          <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                          <select class="radio rounded-5 border-primary">
+                            <option value="1">18</option>
+                            <option value="2">19</option>
+                            <option value="3">20</option>
+                            <option value="4">21</option>
+                            <option value="5">22</option>
+                            <option value="6">23</option>
+                            <option value="7">24</option>
+                            <option value="8">25</option>
+                          </select>
+                        </div>
+                        <div class="col-12">
+                          <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                          <select class="select rounded-5 border-primary">
+                            <option value="1">19</option>
+                            <option value="2">20</option>
+                            <option value="3">21</option>
+                            <option value="4">22</option>
+                            <option value="5">23</option>
+                            <option value="6">24</option>
+                            <option value="7">25</option>
+                            <option value="8">26</option>
+                          </select>
+                        </div>
+                        
+                        <div class="col-12">
+                          <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                          <select class="select rounded-5 border-primary">
+                            <option value="1">España</option>
+                            <option value="2">Andorra</option>
+                            <option value="3">Marruecos</option>
+                            <option value="4">Portugal</option>
+                            <option value="5">Italia</option>
+                            <option value="6">Francia</option>
+                            <option value="7">Grecia</option>
+                            <option value="8">Alemania</option>
+                          </select>
+                        </div>
+                      
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary bg-primary text-white">Buscar pareja <i class="fa-solid fa-magnifying-glass"></i></button>
+                          
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section><!---->
+    </div>
+  </div>
+</div>
+
+
+<div data-draggable="true" class="" style="position: relative;"><!---->
+  <div class="mdb-placeholder justify-content-end d-flex me-5" data-v-271253ee="">
+    <button type="submit" class="btn btn-primary bg-primary text-white me-3">Ordenar por <i class="fa-solid fa-chevron-down"></i></button>
+    <button type="submit" class="btn btn-primary bg-primary text-white">Filtrar busqueda <i class="fa-solid fa-sliders"></i></button>
+  </div>
+  <section draggable="false" class="container pt-5" data-v-271253ee="">
+    <section class="mb-10 text-center">
+      <h2 class="fw-bold mb-5"><span>Encuentra tu</span> <u class="text-primary">media naranja</u></h2>
+      <div class="row gx-lg-5">
+        <div class="col-xl-3 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/2.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 2" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">John Doe</p>
+      </a>    <p class="text-muted mb-0">19 años</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/5.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 5" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Lisa Ferrol</p>
+   </a>       <p class="text-muted mb-0">21 años</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/6.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 6" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Maria Smith</p>
+   </a>       <p class="text-muted mb-0">18 años</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/7.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 7" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Agatha Bevos</p>
+  </a>        <p class="text-muted mb-0">24 años</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/8.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 8" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Darren Randolph</p></a>
+          <p class="text-muted mb-0">26 años</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/9.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 9" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Soraya Letto</p>
+  </a>        <p class="text-muted mb-0">26 años</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/10.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 10" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Maliha Welch</p>
+  </a>        <p class="text-muted mb-0">25 años</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/11.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 11" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Zeynep Dudley</p>
+ </a>         <p class="text-muted mb-0">22 años</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5"><a href="perfil.html"><img src="src/img/12.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 12" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Avaya Hills</p>
+   </a>       <p class="text-muted mb-0">21 años</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5"><a href="perfil.html"><img src="src/img/13.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 13" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Thierry Fischer</p></a>
+          <p class="text-muted mb-0">22 años</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5"><a href="perfil.html"> <img src="src/img/14.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 14" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Aisling Sheldon</p></a>
+          <p class="text-muted mb-0">25 años</p>
+        </div>
+        <div class="col-xl-3 col-md-4 mb-5"><a href="perfil.html"> <a href="perfil.html"><img src="src/img/15.jpg"
+            class="rounded-circle shadow-4 mb-3" alt="Chico Fotografía 15" style="max-width: 100px" aria-controls="#picker-editor">
+          <p class="fw-bold mb-1">Ayat Black</p></a>
+</a>          <p class="text-muted mb-0">26 años</p>
+        </div>
+       
+      </div>
+      <button type="submit" class="btn btn-primary bg-primary text-white" >Cargar más <i class="fa-solid fa-plus"></i></button>
+    </section>
+
+  </section><!---->
+</div>
+
+
+
+
+
+
+
+<div class="container" style="display: flex; justify-content: center;">
+  <!-- Section: About 2 -->
+  <section id="about2" class="mt-5 mb-5 py-3 wow fadeIn" data-wow-delay="0.2s">
+
+    <!-- Grid row -->
+    <div class="row pt-5 wow fadeIn" data-wow-delay="0.4s">
+
+      <!-- Grid column -->
+      <div class="col-lg-6 col-md-12 mb-5 text-center">
+        <img class="mb-3" src="src/img/mensajes.png" alt="Imagen de mensaje" width="50px">
+        <!-- Secion heading -->
+        <h2 class="mb-5 title fw-bolder wow fadeIn text-center text-primary" data-wow-delay="0.2s">
+          <strong>Envía mensajes o chatea 
+            desde el videochat</strong>
+        </h2>
+
+        <!-- Description -->
+        <p align="justify" class="grey-text ms-5 me-5" style="margin-top: -30px;">¡Vea las reacciones de su cita por 
+          primera vez, desde la seguridad y 
+          comodidad de una videollamada 
+          de Sapphire!</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-6 col-md-12 mt-md-4 mt-lg-0 ml-auto mb-5 text-center ">
+
+        <!-- Image -->
+        <img src="src/img/download-phone.png" alt="Imagen de videollamada" class="img-fluid rounded z-depth-0" style="width: 180px;" alt="My photo">
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!-- Section: About 2 -->
+  </div>
+
+
+  <div data-draggable="true" class="" style="position: relative; margin-top: -150px;"><!---->
+    <div class="mdb-placeholder" data-v-271253ee=""></div>
+    <section draggable="false" class="container pt-5" data-v-271253ee="">
+      <section class="mb-10 text-center">
+        <div class="p-5">
+          <h2 class="my-5 display-5 fw-bold ls-tight"> 
+            <span>Descarga la </span><span
+              class="text-primary">APP</span>
+          </h2> 
+          <h5 class="mb-5 fw-light" style="margin-top: -30px;">Y comienza a conocer solter@s de todo el 
+            mundo</h5>
+          <!-- Facebook --> 
+          <a class="btn btn-primary btn-lg me-md-2 mb-3" style="background-color: #3b5998" href="#!" role="button">
+            <i class="fa-brands fa-google-play" aria-controls="#picker-editor"></i> <span>Google Play</span> </a>
+
+          <!-- Twitter --> 
+          <a class="btn btn-primary btn-lg me-md-2 mb-3" style="background-color: #55acee" href="#!"
+            role="button"> <i class="fa-brands fa-apple me-2" aria-controls="#picker-editor"></i><span>App Store</span> </a> 
+
+        </div>
+      </section>
+    </section><!---->
+  </div>
+
+
+<!-- Start your project here-->
+
+<div id="preview" class="preview bg-primary">
+<div style="display: none;"></div>
+<div>
+  <div data-draggable="true" class="" style="position: relative;"><!----><!---->
+    <section draggable="false" class="container pt-5" data-v-271253ee="">
+      <section class="mb-5 text-center text-md-start">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-10">
+            <div class="row align-items-center">
+              <div class="col-md-6 mb-4 mb-md-0">
+                <h2><span class="text-white fw-bold">Suscríbete a
+                    nuestra Newsletter</span></h2>
+                <h5 class="text-white fw-bold"> <span>Para mantener actualizado de las últimas novedades
+                    y actualizaciones en la APP.</span> <br> </h5>
+              </div>
+              <div class="col-md-6 mb-4 mb-md-0">
+                <div class="d-md-flex flex-row">
+
+                  <div class="form-outline flex-fill me-1 mb-4 mb-md-0 bg-white rounded-3 "><input type="email"
+                      id="formControlEmail0" class="form-control form-control-lg rounded-3 text-primary"> <label
+                      class="form-label" for="formControlEmail0" style="margin-left: 0px;">Introducir correo
+                      electrónico</label>
+                    <div class="form-notch">
+                      <div class="form-notch-leading" style="width: 9px;"></div>
+                      <div class="form-notch-middle" style="width: 100px;"></div>
+                      <div class="form-notch-trailing"></div>
+                    </div>
+                  </div> <!-- Submit button --> <button type="submit"
+                    class="btn  btn-primary btn-lg ms-md-2 text-primary tw-bold"
+                    aria-controls="#picker-editor">Suscribirse</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section><!---->
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start text-muted bg-success">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block text-primary fw-semibold">
+      <span>Sigue conectado en nuestras redes sociales:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="index.html" class="me-4 link-primary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="color:#444F5A;">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>Sapphire App
+          </h6>
+          <p>
+            ¡Atención, solteros y solteras del mundo entero! Si queréis encontrar el amor, buscáis nuevos amigos o os lo queréis tomar con calma, Sapphire es vuestra app de citas. 
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="color:#444F5A;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Enlaces de Interés
+          </h6>
+          <p>
+            <a href="sobre-nosotros.html" class="text-reset">Sobre Nosotros</a>
+          </p>
+          <p>
+            <a href="usuarios.html" class="text-reset">Usuarios</a>
+          </p>
+          <p>
+            <a href="servicios.html" class="text-reset">Servicios</a>
+          </p>
+          <p>
+            <a href="faq.html" class="text-reset">FAQ</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="color:#444F5A;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+          Contacto
+          </h6>
+          <p>
+            <a href="contacto.html" class="text-reset">Contacta con nosotros</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Política de privacidad</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Política de cookies</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">Condiciones de uso</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="color:#444F5A;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Suscríbete a nuestra newsletter</h6>
+          <form>
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+
+            <!-- Email input -->
+            <div class="form-notch-middle mb-4 border-success">
+              <label>Email:</label>
+              <input type="email" id="form3Example3" class="form-control text-small" placeholder="Ejemplo: info@fernandocaravaca.com" />
+            </div>
+          
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+              <label class="form-check-label" for="form2Example33">
+                Acepto los <a href="#">términos y condiciones</a>
+              
+              </label>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Suscribirse</button>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 text-white" style="background-color: #ED147D;">
+    © 2022 Sapphire Group, LLC, todos los derechos reservados. Diseñado y desarrollado por 
+    <a class="text-reset fw-bold " href="https://fernandocaravaca.com">Fernando Caravaca</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  <!-- MDB -->
+<script
+  type="text/javascript"
+  src="src/js/mdb.min.js"
+></script>
+</body>
+</html>
